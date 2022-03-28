@@ -25,8 +25,8 @@ function Login() {
         setErrorMessage(null);
         let foundUser;
         for (let i=0; i<ctx.users.length; i++) {
-            if (ctx.users[i].email == email) {
-                if (ctx.users[i].password == password) {
+            if (ctx.users[i].email === email) {
+                if (ctx.users[i].password === password) {
                     foundUser = ctx.users[i];
                     ctx.currentUser = foundUser;
                     ctx.userIndex = i;
